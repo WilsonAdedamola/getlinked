@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+body{
+    background-color: #150E28;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.background{
+    background: url(./assets/prize-bg.png), lightgray 0px -0.093px / 100% 109.967% no-repeat;
+background-blend-mode: color-burn;
+}
+
+.border{
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-left: none;
+    border-right: none;
+}
+
+.prize-border{
+    border: 1px solid #D434FE;
+}
+
+.first-prize{
+    border: 1px solid #903AFF;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #D434FE;
+}
+
+.partner-border{
+    border: 1px solid #D434FE;
+    border-radius: .2rem;
+}
+
+.la-border{
+    border-right: 3px solid #D434FE;
+    border-bottom: 3px solid #D434FE;
+}
+
+.gradient{
+    background: linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);
+}
+
+.blur{
+    filter: blur(100px);
+}
+
+.time{
+    font-family: 'Unica One', cursive;
+}
+
+.min{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text{
+    font-family: 'Clash Display', sans-serif;
+}
+
+.wrap{
+    text-wrap:balance
+}
+
+.shadow{
+    box-shadow:  -0.1px 1.7px 1.9px -1.1px (rgba(144, 58, 255, 1) / 0.36);
+}
+
+@media screen and (max-width:640px) {
+    .blur{
+        filter: blur(60px);
+    }
+}
