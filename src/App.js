@@ -10,6 +10,7 @@ import Timeline from './components/Timeline';
 import Prizes from './components/Prizes';
 import Partners from './components/Partners';
 import Policy from './components/Policy';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Prizes />
       <Partners />
       <Policy />
+      <Footer />
     </div>
   );
 }
