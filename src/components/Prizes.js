@@ -6,9 +6,9 @@ import bronze_medal from '../assets/bronze_medal.png'
 
 const Prizes = () => {
     return (
-        <section className='my-40 flex flex-col items-center justify-center'>
+        <section className='background py-20 my-40 flex flex-col items-center justify-center'>
             <div className="text-white text-center xl:text-start xl:ml-[39rem]">
-                <h1 className='wrap mx-auto max-w-[10rem] font-bold text-xl lg:max-w-xs lg:text-4xl xl:mx-0'>Prizes and <span className='text-[#D434FE]'>Reward</span></h1>
+                <h1 className='text wrap mx-auto max-w-[10rem] font-bold text-xl lg:max-w-xs lg:text-4xl xl:mx-0'>Prizes and <span className='text-[#D434FE]'>Reward</span></h1>
                 <p className='text-xs max-w-[18rem] mx-auto mt-2 text-center lg:text-base xl:text-start xl:max-w-sm xl:mx-0'>Highlight of the prizes or rewards for winners and for participants.</p>
             </div>
             <div className="relative max-w-[90%] mx-auto flex flex-col justify-center gap-20 mt-10 lg:mt-20 lg:gap-44 xl:gap-52 xl:mt-52 xl:flex-row xl:justify-between">

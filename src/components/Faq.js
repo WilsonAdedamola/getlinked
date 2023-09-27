@@ -4,7 +4,7 @@ import illustration4 from '../assets/illustration4.svg'
 
 const Faq = () => {
     return (
-        <section className='border py-20'>
+        <section className='border py-20' id='faqs'>
             <div className="relative max-w-[80%] mx-auto flex flex-col gap-10 items-center lg:flex-row md:justify-center lg:justify-between">
                 <div className="flex flex-col items-center justify-center w-full text-center lg:text-start lg:items-start">
                     <div className="flex flex-col items-center text-start lg:items-start">

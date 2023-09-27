@@ -9,8 +9,8 @@ import call from "../assets/call.svg";
 
 const Footer = () => {
   return (
-    <footer className="my-20 flex flex-col justify-between items-center">
-      <div className="max-w-[80%] mx-auto flex flex-col items-center justify-between gap-10 text-white lg:flex-row">
+    <footer className="background mt-20 py-10 flex flex-col justify-between items-center">
+      <div className="w-[80%] mx-auto flex flex-col items-start justify-between gap-10 text-white lg:flex-row">
         <div className="flex flex-col justify-start items-start w-full">
           <div className="flex flex-col items-start justify-center">
             <img src={logo} alt="getlinked" />
@@ -20,40 +20,40 @@ const Footer = () => {
               young and talented individuals in the field of technology
             </p>
           </div>
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between gap-3 mt-16">
             <p className="text-xs">Term of Use</p>
-            <div className="w-1 h-2 bg-[#D434FE]"></div>
+            <div className="w-px h-4 bg-[#D434FE]"></div>
             <p className="text-xs">Privacy Policy</p>
           </div>
         </div>
 
-        <div className="flex items-center justify-end w-full">
-          <div className="flex flex-col justify-center items-start gap-3">
+        <div className="flex items-center justify-start lg:justify-center w-full">
+          <div className="flex flex-col justify-center items-start gap-5">
             <p className="font-semibold text-sm text-[#D434FE]">Useful Links</p>
-            <a href="#overview" className="text-xs">
+            <a href="#overview" className=" hover text-xs">
               Overview
             </a>
-            <a href="#timeline" className="text-xs">
+            <a href="#timeline" className="hover text-xs">
               Timeline
             </a>
-            <a href="#faq" className="text-xs">
+            <a href="#faq" className="hover text-xs">
               FAQs
             </a>
-            <a href="#overview" className="text-xs">
+            <a href="#overview" className="hover text-xs">
               Register
             </a>
             <div className="flex items-center justify-center gap-2">
               <p className="text-xs">Follow us</p>
-              <img src={instagram} alt="Instagram" />
-              <img src={x} alt="X" />
-              <img src={facebook} alt="facebook" />
-              <img src={linkedin} alt="linkedin" />
+              <img src={instagram} alt="Instagram" className="cursor-pointer"/>
+              <img src={x} alt="X" className="cursor-pointer"/>
+              <img src={facebook} alt="facebook" className="cursor-pointer"/>
+              <img src={linkedin} alt="linkedin" className="cursor-pointer"/>
             </div>
           </div>
         </div>
 
-        <div className="flex items-center justify-end w-full">
-          <div className="flex flex-col justify-center items-start gap-3">
+        <div className="flex items-center justify-start lg:justify-end w-full">
+          <div className="flex flex-col justify-center items-start gap-5">
             <p className="font-semibold text-sm text-[#D434FE]">Contact Us</p>
             <div className="flex items-center justify-center gap-2">
               <img src={call} alt="call" />
@@ -68,7 +68,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-xs text-white">
+      <p className="text-xs text-white mt-16">
         All rights reserved. © getlinked Ltd.
       </p>
     </footer>
