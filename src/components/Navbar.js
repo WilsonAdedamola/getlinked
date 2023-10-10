@@ -3,7 +3,7 @@ import logo from "../assets/getlinked.svg";
 import menu from "../assets/menu.svg";
 import close from "../assets/close.svg";
 import Contact from "../pages/Contact";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -12,7 +12,9 @@ const Navbar = () => {
         {MobileNavbar()}
         <div className="hidden justify-between items-center md:flex">
           <div>
-            <img src={logo} alt="getlinked" />
+            <Link to="/">
+              <img src={logo} alt="getlinked" />
+            </Link>
           </div>
           <div className="flex justify-around items-center text-white md:gap-3 lg:gap-16">
             <a href="#timeline" className="cursor-pointer hover">
@@ -24,19 +26,12 @@ const Navbar = () => {
             <a href="#faqs" className="cursor-pointer hover">
               FAQs
             </a>
-            <Link to="Contact">
-              <a href="" className="cursor-pointer hover">
+            <NavLink to="Contact" className="cursor-pointer hover">
                 Contact
-              </a>
-            </Link>
-            <Link to="register">
-              <a
-                href=""
-                className="gradient ml-5 py-2 px-7 rounded cursor-pointer lg:px-10 lg:ml-10"
-              >
+            </NavLink>
+            <NavLink to="register" className="gradient ml-5 py-4 px-7 rounded cursor-pointer lg:px-10 lg:ml-10">
                 Register
-              </a>
-            </Link>
+            </NavLink>
           </div>
         </div>
       </div>
@@ -48,12 +43,17 @@ const Navbar = () => {
 
 const MobileNavbar = () => {
   const [show, setShow] = useState(false);
+  const handleClick = () => {
+    setShow(false)
+  }
 
   return (
     <>
       <div className="flex justify-between items-center md:hidden">
         <div>
-          <img src={logo} alt="getlinked" />
+          <Link to="/">
+            <img src={logo} alt="getlinked" />
+          </Link>
         </div>
         <div className="">
           <img src={menu} alt="" onClick={() => setShow(true)} />
@@ -66,21 +66,21 @@ const MobileNavbar = () => {
           }
         >
           <div className="absolute right-16 top-12">
-            <img src={close} alt="" onClick={() => setShow(false)} />
+            <img src={close} alt="" onClick={handleClick} />
           </div>
-          <a href="#timeline" className="cursor-pointer hover">
+          <a href="#timeline" className="cursor-pointer hover" onClick={handleClick}>
             Timeline
           </a>
-          <a href="#overview" className="cursor-pointer hover">
+          <a href="#overview" className="cursor-pointer hover" onClick={handleClick}>
             Overview
           </a>
-          <a href="#faqs" className="cursor-pointer hover">
+          <a href="#faqs" className="cursor-pointer hover" onClick={handleClick}>
             FAQs
           </a>
-          <Link to="Contact">
+          <Link to="Contact" onClick={handleClick}>
             <p className="cursor-pointer">Contact</p>
           </Link>
-          <Link to="register">
+          <Link to="register" onClick={handleClick}>
             <p className="gradient py-2 px-10 rounded cursor-pointer">
               Register
             </p>

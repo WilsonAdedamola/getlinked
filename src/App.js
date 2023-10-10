@@ -13,12 +13,19 @@ import Policy from "./components/Policy";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
 import Register from "./pages/Register";
-import { createBrowserRouter, RouterProvider} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import SuccessModal from "./pages/SuccessModal";
+
+// const AppLayout = () => (
+//   <>
+//     <Navbar />
+//     <Outlet />
+//   </>
+// );
 
 function Home() {
   return (
-    <div className="overflow-hidden scroll-smooth">
+    <div className="scroll-smooth">
       <Navbar />
       <Hero />
       <Introduction />
@@ -43,18 +50,23 @@ function App() {
 }
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "contact",
-    element: <Contact />,
-  },
-  {
-    path: "register",
-    element: <Register />,
-  },
+  // {
+  //   element: <AppLayout />,
+  //   children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "register",
+        element: <Register />,
+      },
+    // ],
+  // },
 ]);
 
 export default App;

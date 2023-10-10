@@ -4,7 +4,7 @@ import arrow from '../assets/arrow.svg'
 
 const Introduction = () => {
   return (
-    <section className='mb-20'>
+    <section id='overview' className='mb-20'>
       <div className="max-w-[80%] mx-auto flex flex-col items-center lg:flex-row md:justify-center lg:justify-between lg:gap-10 xl:justify-around">
         <div className="flex items-center justify-center w-full lg:justify-start">
           <div className="relative">

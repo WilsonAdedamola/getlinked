@@ -6,8 +6,8 @@ import lightbulb from '../assets/lightbulb.svg'
 
 const Hero = () => {
     return (
-        <section className='border relative pt-7 mb-20' id='#overview'>
-            <div className='max-w-[90%] ml-auto'>
+        <section className='border relative pt-7 mb-20'>
+            <div className='max-w-[90%] mx-auto'>
                 <div className="absolute -z-10 translate-y-12 translate-x-26 blur rounded-full w-40 h-40 bg-[#903aff] sm:w-80 sm:h-80 sm:-translate-y-3 md:translate-x-40"></div>
                 <div className="hidden absolute right-28 -z-10 blur translate-y-48 rounded-full bg-[#903aff] lg:right-20 lg:translate-y-40 lg:w-60 lg:h-60 lg:block xl:w-96 xl:h-96"></div>
                 <div className="flex justify-center text-center w-full mb-20 lg:justify-end">
