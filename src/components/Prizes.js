@@ -13,7 +13,7 @@ const Prizes = () => {
             </div>
             <div className="relative max-w-[90%] mx-auto flex flex-col justify-center gap-20 mt-10 lg:mt-20 lg:gap-44 xl:gap-52 xl:mt-52 xl:flex-row xl:justify-between">
                 <div className="absolute z-10 -top-10 left-0 blur rounded-full w-32 h-32 bg-[#903aff] sm:w-56 sm:h-56 sm:-top-10 sm:-left-20 xl:top-0  xl:left-52"></div>
-                <div className="absolute right-0 bottom-0 z-10 blur rounded-full w-36 h-36 bg-[#903aff] xl:-right-80 lg:w-60 lg:h-80"></div>
+                <div className="absolute right-0 bottom-0 z-10 blur rounded-full w-36 h-36 bg-[#903aff] lg:w-60 lg:h-80"></div>
                 <div className='flex items-center w-full justify-center lg:-mt-20 xl:justify-start'>
                     <img src={illustration5} alt="Prizes and Rewards" />
                 </div>

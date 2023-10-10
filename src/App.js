@@ -25,7 +25,7 @@ import SuccessModal from "./pages/SuccessModal";
 
 function Home() {
   return (
-    <div className="scroll-smooth">
+    <div className="scroll-smooth min-[2100px]:max-w-[2100px] mx-auto">
       <Navbar />
       <Hero />
       <Introduction />
